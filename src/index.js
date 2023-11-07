@@ -16,6 +16,10 @@ app.get("/", async (req, res) => {
 }
 });
 
-app.listen(port, () => {
-    console.log(`Servidor Rodando na porta ${port}`);
-})
+// app.listen(port, () => {
+//     console.log(`Servidor Rodando na porta ${port}`);
+// })
+
+const server = app.listen(3000);
+
+module.exports = { app, server };
