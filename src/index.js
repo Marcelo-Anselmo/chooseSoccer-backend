@@ -22,4 +22,4 @@ app.get("/", async (req, res) => {
 
 const server = app.listen(3000);
 
-module.exports = { app, server };
+module.exports = { app };
